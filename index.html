@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Issue Tracker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchIssues()">
+    <div class="container">
+      <h1>Project - IssueTracker <small>by Sajid Javed</small></h1>
+      <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescInput">Description</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
+          </div>
+          <div class="form-group">
+            <label for="issueSeverityInput">Severity</label>
+            <select id="issueSeverityInput" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <!-- <div>
+            <label for="issueSubmittedInput">Isue Submited By</label>
+            <input type="text" class="form-control" id="issueSubmittedInput" placeholder="Issue submitted by .... ">
+          </div> -->
+          <div class="form-group">
+            <label for="issueAssignedToInput">Assigned To</label>
+            <select id="issueAssignedToInput" class="form-control">
+              <option value="Sajid">Sajid - Developer</option>
+              <option value="Vincent">Vincent - UI Designer</option>
+              <option value="Tom">Tom - Senior Developer</option>
+              <option value="Yulia">Yulia - Developer</option>
+              <option value="Ben">Ben - Developer</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col-lg-12">
+        <div id="issuesList">
+        </div>
+      </div>
+      <div>
+        <a href="http://www.sajid-javed.co.uk/">
+          <button class="button-62">Back to my Portfolio</button>
+        </a>
+      </div>
+    <br/>
+      <div class="footer">
+        <p>@ IssueTracker - 2021</p>
+      </div>
+    </div>
+    <script src="chance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
